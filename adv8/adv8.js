@@ -3,10 +3,12 @@ import { data1, data2, testData } from "./input8.js";
 // 945974 to high
 // 945973 to high
 
+
+// 933305 
 const data = data1;
 
 function calcChar(str) {
-  console.log(str)
+  // console.log(str)
   let temp = 0
   str.split("").forEach(elem => temp = temp + elem.charCodeAt(0))
   return temp
@@ -81,6 +83,7 @@ function runFunc() {
             if (intersect(seg["botLef"], inter, 8)) {
               seg["topRig"] = inter
               nums[6] = intersect(nums[8], seg["topRig"])
+              // todo: här är det kaos
               nums[5] = intersect(nums[6], seg["botLef"])
             }
           }
